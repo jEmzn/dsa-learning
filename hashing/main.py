@@ -3,7 +3,7 @@ from hash_table_qp import HashTableQP
 from hash_table_ch import HashTableCh
 
 
-h = HashTableQP(11)
+h = HashTableCh(11)
 
 h[10] = "cat"
 h[22] = "dog"
@@ -17,6 +17,7 @@ h[59] = "fish"
 
 print(h.slots)
 print(9/11)
+print(h.get(59))
 
 
 # print(h.data)
