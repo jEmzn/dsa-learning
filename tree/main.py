@@ -1,5 +1,6 @@
 from binary_tree import BinaryTree
 
+
 r = BinaryTree('1')
 
 r.insertLeft('2')
