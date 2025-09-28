@@ -3,10 +3,10 @@ from show_heap import show
 class MinHeap:
 
     def __init__(self):
-        # self.heapList = [0]
+        self.heapList = [0]
         # self.heapList = [0, 1, 1, 2, 3, 7]
-        self.heapList = [0, 5, 9, 11, 14, 18, 19, 21, 33, 17, 27]
-        self.currentSize = 10
+        # self.heapList = [0, 5, 9, 11, 14, 18, 19, 21, 33, 17, 27]
+        self.currentSize = 0
 
     def insert(self, num:int):
         self.heapList.append(num)
@@ -74,7 +74,15 @@ h = MinHeap()
 # print(h.heapList)
 # h.insert(1)
 # print(h.heapList)
-show(h.heapList, h.currentSize)
-print(h.extract_min())
-show(h.heapList, h.currentSize)
+# show(h.heapList, h.currentSize)
+# print(h.extract_min())
+# show(h.heapList, h.currentSize)
+
 # print(h.heapList)
+
+node = int(input("New Node: "))
+
+while node != 0:
+    h.insert(node)
+    show(h.heapList, h.currentSize)
+    node = int(input("New Node: "))

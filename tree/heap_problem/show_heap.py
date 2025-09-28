@@ -13,9 +13,11 @@ def changeDigit(num):
     return f"{num:2d}"
 
 def subLevel(heapList, size):
-    alist = [[heapList[1]]]
+    alist = [[heapList[1]]] 
     i = 2
     # size = len(list) - 1
+    # if size == 1:
+    #     return heapList[1]
     while i + 2 <= size:
         # print(list[i:i * 2])
         alist.append(heapList[i:i*2])

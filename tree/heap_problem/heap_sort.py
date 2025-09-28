@@ -30,7 +30,12 @@ def heapify(heapList, size):
     
     return newHeap
 
+def printHeap(arr, n):
+    print("Array representation of Heap is:")
 
+    for i in range(n):
+        print(arr[i], end=" ")
+    print()  
 
 
 oldHeap = [0, 99, 40, 25, 65, 12, 48, 18, 1, 98, 27, 7, 3, 45, 9, 30]
@@ -38,4 +43,3 @@ oldHeap = [0, 99, 40, 25, 65, 12, 48, 18, 1, 98, 27, 7, 3, 45, 9, 30]
 newHeap = heapify(oldHeap, len(oldHeap) - 1).heapList
 
 show(newHeap, len(newHeap) - 1)
-    
